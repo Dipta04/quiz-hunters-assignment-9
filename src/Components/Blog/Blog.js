@@ -9,7 +9,7 @@ const Blog = () => {
             <p><small>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.</small></p>
             <h2>What is useref hook in react?</h2>
             <p><small>The useRef Hook allows you to persist values between renders.It can be used to store a mutable value that does not cause a re-render when updated.
-                It can be used to access a DOM element directly.</small></p>
+                It can be used to access a DOM element directly.useRef() only returns one item.When we initialize useRef we set the initial value: useRef(0).</small></p>
         </div>
     );
 };
