@@ -8,12 +8,14 @@ const Quizreact = () => {
     const question = questions.questions;
     console.log(question);
     return (
-        <div className='quiz-details'>
+        <div>
             <div>
            {
-            question.map(ques=> <div>
+            question.map(ques=> <div className='quiz-details'>
                 <p>{ques.question}</p>
-                
+                {
+                    ques.options.map(ans=><li>{ans}</li>)
+                }
             </div>)
            }
            </div>

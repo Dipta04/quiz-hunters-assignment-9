@@ -1,0 +1,19 @@
+.quiz-details{
+    margin-top: 20px;
+   border: 2px solid slategrey;
+   font-weight: 600;
+   width: 400px;
+   margin-left: 500px;
+}
+@media screen and (max-width:480px) and (min-width:320px){
+    .quiz-details{
+        margin-left: 0px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:481px){
+    .quiz-details{
+        margin-left: 0px;
+        width: 200px;
+    }
+    }

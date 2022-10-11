@@ -12,13 +12,14 @@ const Home = () => {
             <img src="https://thumbs.dreamstime.com/b/quiz-word-red-d-letters-to-illustrate-exam-evaluation-assessment-to-measure-your-knowledge-expertise-44060147.jpg" alt="" />
             <h2>Let's Try Some Quiz</h2>
             </div>
+            <div className='div-header'>
             {
                 quizses.map(quiz=><Quiz
                 key={quiz.id}
                 quiz={quiz}
                 ></Quiz>)
             }
-            
+            </div>
         </div>
     );
 };
