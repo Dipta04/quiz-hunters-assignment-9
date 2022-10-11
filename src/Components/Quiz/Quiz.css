@@ -10,3 +10,9 @@
     width: 286px;
     height: 286px;
 }
+@media screen and (max-width:480px) and (min-width:320px){
+    .quiz-container img{
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -2,3 +2,9 @@
     margin-top: 150px;
     margin-left: 150px;
 }
+@media screen and (max-width:480px) and (min-width:320px){
+    .statistics{
+       margin-top: 150px;
+       margin-left: 0px;
+    }
+}
