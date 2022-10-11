@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Quizreact from '../Quiz-react/Quizreact';
 import './Quiz.css'
 
 const Quiz = ({quiz}) => {
