@@ -18,6 +18,7 @@ const Home = () => {
                 quiz={quiz}
                 ></Quiz>)
             }
+            
         </div>
     );
 };

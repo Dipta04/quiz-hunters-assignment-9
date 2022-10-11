@@ -5,6 +5,7 @@ import Main from './Layout/Main';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import Statistics from './Components/Statistics/Statistics';
+import Quizreact from './Components/Quiz-react/Quizreact';
 
 function App() {
   const router= createBrowserRouter([
@@ -26,7 +27,14 @@ function App() {
         {
           path:'/blog',
           element:<Blog></Blog>
-        }
+        },
+        {
+          path:'/name/:id',
+          loader: async({params})=>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element:<Quizreact></Quizreact>
+        },
       ]
       
     },

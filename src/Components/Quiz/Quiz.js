@@ -4,15 +4,15 @@ import Quizreact from '../Quiz-react/Quizreact';
 import './Quiz.css'
 
 const Quiz = ({quiz}) => {
-    const {name,logo,total} =quiz;
+    const {name,logo,total,id} =quiz;
     return (
         <div className='quiz-container'>
             <img src={logo} alt="" />
             <h5>Name:{name}</h5>
             <h5>total quiz:{total}</h5>
-            
+            <Link to={`/name/${id}`}>
             <button>Lets start</button>
-            
+            </Link>
         </div>
     );
 };
